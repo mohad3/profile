@@ -1,0 +1,151 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+    <link href="https://transloadit.edgly.net/releases/uppy/v1.6.0/uppy.min.css" rel="stylesheet">
+<title>
+    Test - Platfor
+</title>
+<style>
+@font-face {
+  font-family: vazir;
+  src: url('vazir.eot');
+  src: url('vazir.eot?#iefix') format('vazir-opentype'),
+       url('vazir.woff') format('woff'),
+       url('vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  .container{
+    background-color: #fff;
+        width: 25%;
+        height: 75%;
+        margin: auto;
+        padding: 50px;
+        font-family: vazir;
+        text-align: right;
+        color: rgb(120, 120, 120);
+        border-radius: 7px;
+        border-color: dimgray;
+        padding-bottom: 20px;
+        font-weight: 500;
+        line-height: 2.5;
+        color:gray;
+     }
+
+     .dropbtn {
+  background-color: #F4F4F4;
+  color: black ;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: vazir;
+}
+
+.dropdown {
+  float: left;
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: vazir;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+    }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #F4F4F4;
+}
+p{
+font-weight: bold;
+}
+.Paragraph{
+    border: none;
+}
+#gallery .thumbnail{
+            width:150px;
+            height: 150px;
+            float:left;
+            margin:2px;
+        }
+        #gallery .thumbnail img{
+            width:150px;
+            height: 150px;
+        }
+        .image-upload>input {
+  display: none;
+  border: none;
+  
+}
+.image-upload{
+        border: none;
+       padding: 400px 50px 0px 50px;
+}
+.btn {
+  background-color: DodgerBlue; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 10%;
+  float:left;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}   
+.drag-drop-area {
+
+}
+</style>
+</head>
+<body style="background-color: #eff3f6; ">
+<div class="container">
+    <img src="https://getdrawings.com/free-icon/profile-icon-png-75.png" width="52" height="52">
+    <div class="dropdown">
+        <button class="dropbtn">انتخاب دسته بندی</button>
+        <div class="dropdown-content">
+          <a href="#">مدیریت محصول</a>
+          <a href="#">طراحی محصول</a>
+          <a href="#">هنر</a>
+        </div>
+      </div>
+   <p>عنوان مطلب</p>
+   <input class="Paragraph" placeholder="متن مورد نظر خود را تایپ کنید">
+   <div id="gallery"></div>
+   <div class="image-upload">
+    <label for="fileinput">
+      <img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/20-512.png" width="52" height="52" float="right" />
+    </label>
+    <input id="fileinput" type="file" multiple="multiple" accept="image/*"/>
+    <button class="btn" onClick="doFile()" name="انتشار" ><i class="fa fa-bars"></i>انتشار</button>
+ 
+  </div>
+   
+<script src="gallery.js"></script>
+
+</div>
+</body>
+
+</html>
